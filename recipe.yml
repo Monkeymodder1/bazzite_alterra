@@ -1,5 +1,6 @@
 name: bazzite-alterra
 base-image: ghcr.io/ublue-os/bazzite-deck
+image-version: stable
 modules:
   - type: script
     snippets:
