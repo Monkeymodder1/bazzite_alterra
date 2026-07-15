@@ -1,6 +1,8 @@
 name: bazzite-alterra
+description: Subnautica alterra boot build
 base-image: ghcr.io/ublue-os/bazzite-deck
 image-version: stable
+
 modules:
   - type: script
     snippets:
