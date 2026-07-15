@@ -12,7 +12,7 @@ jobs:
     permissions:
       contents: read
       packages: write
-      id-token: --no-sign
+      id-token: write
     steps:
       - name: Checkout Project Repository Tree
         uses: actions/checkout@v4
