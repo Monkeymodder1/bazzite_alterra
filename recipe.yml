@@ -3,6 +3,9 @@ description: Subnautica alterra boot build
 base-image: ghcr.io/ublue-os/bazzite-deck
 image-version: stable
 
+# FORCE DISABLE SIGNING TO COMPLETE SKIPP COSIGN CHECKS
+signing: false
+
 modules:
   - type: script
     snippets:
