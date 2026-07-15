@@ -7,6 +7,11 @@ image-version: stable
 signing: false
 
 modules:
+  # FORCE INSTALL FFMPEG UTILITIES VIA NATIVE PACKAGE CONTAINER
+  - type: rpm-ostree
+    install:
+      - ffmpeg
+
   - type: script
     snippets:
       - |
