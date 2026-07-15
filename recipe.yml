@@ -1,0 +1,9 @@
+name: bazzite-alterra
+base-image: ghcr.io/ublue-os/bazzite-deck
+modules:
+  - type: script
+    snippets:
+      - |
+        mkdir -p /usr/share/plymouth/themes/spinner
+        ffmpeg -y -i /workspace/ALTERRA/alterra_spinning.mp4 -vf "scale=1920:1080" /usr/share/plymouth/themes/spinner/loop_%03d.png
+        ffmpeg -y -i /workspace/ALTERRA/alterra_loading.mp4 -vf "scale=1920:1080" /usr/share/plymouth/themes/spinner/intro_%03d.png
