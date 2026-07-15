@@ -22,6 +22,3 @@ jobs:
         with:
           recipe: 'recipe.yml'
           registry_token: ${{ github.token }}
-          prune: true
-          # ADD THE NO-SIGN FLAG TO BYPASS THE KEY ERROR
-          extra_flags: '--no-sign'
